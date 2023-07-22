@@ -1,0 +1,4 @@
+{
+  "extends": "next/core-web-vitals",
+  "no-html-link-for-pages": "off"
+}
