@@ -52,7 +52,7 @@ export function Logo({
         invert={invert}
         filled={filled}
       />
-      <text x="50" y="27" font-size="30" font-weight="400" font-family="satoshi-bold">VBS.</text>
+      <text x="50" y="27" fontSize="30" fontWeight="400" fontFamily="satoshi-bold">VBS.</text>
     </svg>
   )
 }
