@@ -190,10 +190,10 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Scandinavia's leading blockchain development company.
+            Scandinavia’s leading blockchain development company.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            At Viken Blockchain Solutions, we're pioneering the future of
+            At Viken Blockchain Solutions, we’re pioneering the future of
             blockchain technology. Our team is at the forefront of innovation,
             delivering cutting-edge solutions to our clients.
           </p>

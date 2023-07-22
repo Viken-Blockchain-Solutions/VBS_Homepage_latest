@@ -48,10 +48,10 @@ function Discover() {
     <Section title="Discover" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          The discovery phase is all about understanding our clients' needs,
+          The discovery phase is all about understanding our clients’ needs,
           goals, and the unique challenges they face in their industry. We start
           by conducting in-depth questionnaires to gather as much information as
-          possible about our clients' business operations, their target
+          possible about our clients’ business operations, their target
           audience, and their expectations from the blockchain and Web3
           solutions.
         </p>
@@ -64,7 +64,7 @@ function Discover() {
         </p>
         <p>
           Our team of blockchain experts also performs a comprehensive
-          blockchain audit, evaluating our clients' current use of blockchain
+          blockchain audit, evaluating our clients’ current use of blockchain
           technology, if any, and identifying areas where improvements can be
           made.
         </p>
@@ -89,15 +89,15 @@ function Build() {
     <Section title="Build" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          Once we have a clear understanding of our clients' needs and goals, we
+          Once we have a clear understanding of our clients’ needs and goals, we
           move on to the build phase. This involves developing a comprehensive
-          roadmap that outlines the project's objectives, key milestones, and
+          roadmap that outlines the project’s objectives, key milestones, and
           the blockchain and Web3 solutions we will implement.
         </p>
         <p>
           Our team of blockchain developers, Web3 experts, and DeFi engineers
           then begin the process of building the solutions. This includes
-          developing custom blockchain networks tailored to our clients' needs,
+          developing custom blockchain networks tailored to our clients’ needs,
           creating secure and efficient smart contracts for various
           applications, building decentralized applications (dApps) that
           interact seamlessly with blockchain networks and smart contracts, and
@@ -150,9 +150,9 @@ function Deliver() {
         </p>
         <p>
           Once the solutions have passed all tests, we provide support in
-          integrating them into our clients' existing systems. We ensure that
+          integrating them into our clients’ existing systems. We ensure that
           the integration process is smooth and seamless, with minimal
-          disruption to our clients' operations.
+          disruption to our clients’ operations.
         </p>
         <p>
           After the successful integration of the solutions, we provide
@@ -170,7 +170,7 @@ function Deliver() {
           Rigorous testing to ensure functionality, security, and performance.
         </ListItem>
         <ListItem title="Integration">
-          Support in integrating the solutions into the clients' existing
+          Support in integrating the solutions into the clients’ existing
           systems.
         </ListItem>
         <ListItem title="Training">
@@ -206,7 +206,7 @@ function Values() {
       >
         <p>
           At VBS, we are committed to delivering cutting-edge blockchain and
-          Web3 solutions that meet our clients' needs and exceed their
+          Web3 solutions that meet our clients’ needs and exceed their
           expectations. We strive to stay at the forefront of emerging trends
           and technologies in the blockchain and Web3 space, ensuring that our
           solutions are innovative and future-proof.
@@ -216,7 +216,7 @@ function Values() {
       <Container className="mt-24">
         <GridList>
           <GridListItem title="Meticulous">
-            We start by understanding our clients' needs and goals, and then
+            We start by understanding our clients’ needs and goals, and then
             develop solutions that align with their vision and objectives.
           </GridListItem>
           <GridListItem title="Efficient">
