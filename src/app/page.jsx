@@ -15,6 +15,8 @@ import logoCentaurify from '@/images/clients/centaurify/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+import logoKoe from '@/images/clients/kingdoms-of-ether/logo-light.svg' //koe_400x400.svg'
+import logoRequest from '@/images/clients/request-finance/logo-light.svg'
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
@@ -31,6 +33,8 @@ const clients = [
   ['Bright Path', logoBrightPath],
   ['North Adventures', logoNorthAdventures],
   ['Centaurify', logoCentaurify],
+  ['Kingdoms of Ether', logoKoe],
+  ['Request Finance', logoRequest],
 ]
 
 function Clients() {
@@ -51,7 +55,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client} optimized />
                 </FadeIn>
               </li>
             ))}
