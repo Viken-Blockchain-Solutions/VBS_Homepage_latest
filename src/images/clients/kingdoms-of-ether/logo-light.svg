@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 36" fill="none" preserveAspectRatio="xMidYMid meet">
-  <svg width="40" height="40" viewBox="0 0 400 400" fill="white" preserveAspectRatio="xMinYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 40" fill="none" preserveAspectRatio="xMidYMid meet">
+  <svg width="40" height="40" viewBox="0 0 400 450" fill="white" preserveAspectRatio="xMinYMid meet">
 	<rect y="3" width="30" height="30" rx="8" fill="#0A0A0A" />
 	<path opacity="1.000000" stroke="none" d="
 	M275.000000,401.000000 
@@ -355,5 +355,5 @@
 		C328.003174,117.954903 328.246460,118.300964 328.751465,118.827209 
 	z" />
     </svg>
-  <text x="50" y="25" font-family="satoshi-bold" font-size="35" fill="white" text-anchor="right" alignment-baseline="middle">Kingdoms of Ether</text>
+  <text x="50" y="24" font-family="satoshi-bold" font-size="35" fill="white" text-anchor="right" alignment-baseline="middle">Kingdoms of Ether</text>
 </svg>

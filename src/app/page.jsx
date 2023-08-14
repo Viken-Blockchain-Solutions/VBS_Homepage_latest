@@ -8,33 +8,21 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoCentaurify from '@/images/clients/centaurify/logo-light.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
 import logoKoe from '@/images/clients/kingdoms-of-ether/logo-light.svg' //koe_400x400.svg'
 import logoRequest from '@/images/clients/request-finance/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import logoMoralis from '@/images/clients/moralis/logo-light.svg'
+import logoIagon from '@/images/clients/iagon/logo-light.svg'
+import logoCentaurifyDark from '@/images/clients/centaurify/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
   ['Centaurify', logoCentaurify],
-  ['Kingdoms of Ether', logoKoe],
+  ['Moralis Academy', logoMoralis],
   ['Request Finance', logoRequest],
+  ['Kingdoms of Ether', logoKoe],
+  ['Iagon', logoIagon],
 ]
 
 function Clients() {
@@ -43,7 +31,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We’ve had the pleasure of collaborating with numerous talented individuals on various projects
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -55,7 +43,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} optimized />
+                  <Image src={logo} alt={client} optimized="true" />
                 </FadeIn>
               </li>
             ))}
@@ -210,7 +198,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'Centaurify', logo: logoCentaurifyDark }}
       >
         The team at VBS consistently exceeds our expectations. Their expertise
         in blockchain technology has been instrumental in the success of our
