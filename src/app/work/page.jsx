@@ -9,14 +9,10 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
+import logoIagonDark from '@/images/clients/iagon/logo-dark.svg'
+import logoMoralis from '@/images/clients/moralis/logo-dark.svg'
+import logoRequest from '@/images/clients/request-finance/logo-dark.svg'
+import logoKoe from '@/images/clients/kingdoms-of-ether/logo-dark.svg'
 import logoCentaurify from '@/images/clients/centaurify/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
@@ -94,14 +90,9 @@ function CaseStudies({ caseStudies }) {
 
 const clients = [
   ['Centaurify', logoCentaurify],
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Request Finance', logoRequest],
+  ['Kingdoms of Ether', logoKoe],
+  ['Iagon', logoIagonDark],
 ]
 
 function Clients() {
@@ -160,10 +151,9 @@ export default async function Work() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
+        client={{ name: 'Iagon', logo: logoIagonDark }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        We reached out to <em>VBS</em> after being impressed by their previous projects. They came highly recommended by several of our associates.
       </Testimonial>
 
       <Clients />
