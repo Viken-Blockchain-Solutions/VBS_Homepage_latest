@@ -33,6 +33,10 @@ export function Offices({ invert = false, ...props }) {
         <Office name="Company Info" invert={invert}>
           VBS - Viken Blockchain Solutions AS
           <br />
+          Phone: +47 480 78 533
+          <br />
+          E-mail: contact@vikenblockchain.com
+          <br />
           NO 930 668 869 MVA
         </Office>
       </li>
