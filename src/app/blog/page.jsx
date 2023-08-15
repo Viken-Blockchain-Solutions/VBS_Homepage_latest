@@ -13,7 +13,7 @@ import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 export const metadata = {
   title: 'Articles',
   description:
-    'Stay up-to-date with the latest industry news as our marketing team explores new advancements in Web3 and Blockchain technologies.',
+    'Stay up-to-date with the latest industry news as our team explores new advancements in Web3 and Blockchain technologies.',
 }
 
 export default async function Blog() {
@@ -21,9 +21,9 @@ export default async function Blog() {
 
   return (
     <>
-      <PageIntro eyebrow="blog" title="The latest articles and news">
+      <PageIntro eyebrow="articles" title="The latest articles and news">
         <p>
-        Stay up-to-date with the latest industry news as our marketing team explores new advancements in Web3 and Blockchain technologies.
+        Stay up-to-date with the latest industry news as our team explores new advancements in Web3 and Blockchain technologies.
         </p>
       </PageIntro>
 
