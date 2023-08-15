@@ -3,5 +3,17 @@
     "cSpell.words": [
         "clsx",
         "Moralis"
-    ]
+    ],
+    "better-comments.highlightPlainText": true,
+    "codesandbox.environment": "dev",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "svg.completion.emmet": true,
+    "autoimport.doubleQuotes": true,
+    "autoimport.showNotifications": false
 }
