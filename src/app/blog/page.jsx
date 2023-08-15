@@ -11,7 +11,7 @@ import { formatDate } from '@/lib/formatDate'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
 export const metadata = {
-  title: 'Blog',
+  title: 'Articles',
   description:
     'Stay up-to-date with the latest industry news as our marketing team explores new advancements in Web3 and Blockchain technologies.',
 }
@@ -21,7 +21,7 @@ export default async function Blog() {
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro eyebrow="blog" title="The latest articles and news">
         <p>
         Stay up-to-date with the latest industry news as our marketing team explores new advancements in Web3 and Blockchain technologies.
         </p>
@@ -49,7 +49,7 @@ export default async function Blog() {
                         <dd className="mt-6 flex gap-x-4">
                           <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
                             <Image
-                              alt=""
+                              alt="Web3 and Blockchain"
                               {...article.author.image}
                               className="h-12 w-12 object-cover grayscale"
                             />
