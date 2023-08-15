@@ -22,7 +22,7 @@ function CaseStudies({ caseStudies }) {
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-neutral-950">
-          Case studies
+        Featured Case Studies:
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -114,7 +114,7 @@ function Clients() {
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
                 <Border className="pt-12 group-[&:nth-child(-n+2)]:-mt-px sm:group-[&:nth-child(3)]:-mt-px lg:group-[&:nth-child(4)]:-mt-px">
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} alt={client} optimized="true" />
                 </Border>
               </FadeIn>
             </li>
@@ -138,13 +138,13 @@ export default async function Work() {
     <>
       <PageIntro
         eyebrow="Our work"
-        title="Innovative solutions for real-world challenges."
+        title="Crafting Cutting-Edge Solutions for Modern Challenges."
       >
         <p>
-          We believe in the power of innovation and the efficient use of our resources to deliver 
-          exceptional value to our clients. Our primary approach involves continuously evolving 
-          and enhancing our blockchain and Web3 projects, leveraging the latest advancements in 
-          these technologies.
+        At the intersection of innovation and dedication, 
+        we stand committed to delivering unparalleled value to our clients. 
+        Our ethos revolves around relentless evolution, ensuring our blockchain 
+        and Web3 projects remain at the forefront of technological advancements.
         </p>
       </PageIntro>
 
