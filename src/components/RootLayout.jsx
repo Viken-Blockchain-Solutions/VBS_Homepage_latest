@@ -133,6 +133,11 @@ function Navigation() {
         <NavigationItem href="/process">Our Process</NavigationItem>
         <NavigationItem href="/blog">Articles</NavigationItem>
       </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/web3">Web3 Library</NavigationItem>
+        <NavigationItem href="/">Coming Soon</NavigationItem>
+      </NavigationRow>
+
     </nav>
   )
 }
