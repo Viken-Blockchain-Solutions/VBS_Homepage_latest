@@ -35,7 +35,7 @@ function GitHubIcon(props) {
 
 
 export const socialMediaProfiles = [
-  { title: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
+  { title: 'Facebook', href: 'https://facebook.com/VIkenBlockchainSolutions/', icon: FacebookIcon },
   { title: 'Twitter', href: 'https://twitter.com', icon: TwitterIcon },
   { title: 'GitHub', href: 'https://github.com/Viken-Blockchain-Solutions', icon: GitHubIcon },
 ]
