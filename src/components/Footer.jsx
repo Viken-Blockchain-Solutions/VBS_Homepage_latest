@@ -26,7 +26,8 @@ const navigation = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
+      { title: 'Articles', href: '/blog' },
+      { title: 'Web3 library', href: '/web3' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
