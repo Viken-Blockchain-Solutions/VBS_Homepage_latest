@@ -10,6 +10,7 @@ const navigation = [
     title: 'Work',
     links: [
       { title: 'Centaurify', href: '/work/centaurify' },
+      { title: 'Zyberia', href: '/work/zyberia' },
       { title: 'VBS', href: '/work/vbs' },
       {
         title: (
