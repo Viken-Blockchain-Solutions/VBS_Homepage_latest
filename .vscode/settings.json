@@ -2,7 +2,8 @@
     "svg.preview.background": "white",
     "cSpell.words": [
         "clsx",
-        "Moralis"
+        "Moralis",
+        "SENDGRID"
     ],
     "better-comments.highlightPlainText": true,
     "codesandbox.environment": "dev",
