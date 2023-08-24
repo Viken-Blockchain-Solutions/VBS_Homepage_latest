@@ -1,9 +1,12 @@
 import Link from 'next/link'
+import { useState } from 'react'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
+import subscribe from '@/app/api/route'
+
 
 const navigation = [
   {
@@ -80,8 +83,23 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    
+    const response = await subscribe(email);
+
+    if (response.success) {
+      setMessage(response.message);
+    } else {
+      setMessage(response.message);
+    }
+  }
+
   return (
-    <form className="max-w-sm">
+    <form className="max-w-sm" onSubmit={handleSubmit} method="post">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
@@ -92,6 +110,7 @@ function NewsletterForm() {
       <div className="relative mt-6">
         <input
           type="email"
+          name="email"
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"
@@ -107,6 +126,7 @@ function NewsletterForm() {
           </button>
         </div>
       </div>
+      <p className="mt-4">{message}</p>
     </form>
   )
 }
