@@ -17,12 +17,17 @@ export const theme = {
     '7xl': ['4rem', { lineHeight: '4.5rem' }],
   },
   extend: {
+    colors: {
+      "vbs-yellow-dark": "#DC9826",
+      "vbs-yellow-light": "#F3AA03",
+
+    },
     borderRadius: {
       '4xl': '2.5rem',
     },
     fontFamily: {
       sans: ['Mona Sans', ..._fontFamily.sans],
-      satoshi: 'Satoshi',
+      satoshi: ['Satoshi', _fontFamily.satoshi],
       display: [
         'Satoshi',
         { fontVariationSettings: '"wdth" 125' },

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { ContactSection } from '@/components/ContactSection'
@@ -57,7 +58,7 @@ const library = [
         name: 'NFT Insight',
         description: 'A comprehensive tool designed to seamlessly integrate and showcase your NFT collections on any platform, offering insights into your NFT assets.',
         image: { src: imageNFTinsight },
-        link: '#nft-insight'
+        link: 'https://nft-tools-nine.vercel.app/'
       },
       {
         name: 'Staking Pools Dashboard',
@@ -74,7 +75,7 @@ const library = [
         name: 'Spread Dapp - NFT Edition',
         description: 'Introducing Spread Dapp - NFT Edition, a revolutionary decentralized platform that redefines the way assets are transferred on the blockchain. Seamlessly transfer native assets, ERC20, and uniquely, ERC721 tokens to multiple addresses in a single transaction. The NFT Edition further enhances this by allowing the batch transfer of individual NFTs.',
         image: { src: imageSpread },
-        link: '#spread-dapp'
+        link: 'https://spreadnftedition.vercel.app/'
       },
       {
         name: 'Decentralized Exchange',
@@ -108,12 +109,13 @@ function Library() {
                     <li key={product.name}>
                       <FadeIn>
                         <div className="group relative overflow-hidden rounded-3xl bg-neutral-100 mb-4">
-                          <Image
-                            alt="WEB3"
-                            {...product.image}
-                            className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
-                            href={product.link}
-                          />
+                          <Link href={product.link}>
+                            <Image
+                              alt="WEB3"
+                              {...product.image}
+                              className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                            />
+                          </Link>
                         </div>
                         <div>
                           <p className="font-display text-base/6 font-semibold tracking-wide text-neutral-950">

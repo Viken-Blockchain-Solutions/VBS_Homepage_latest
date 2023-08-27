@@ -9,11 +9,12 @@ import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
 import logoCentaurify from '@/images/clients/centaurify/logo-light.svg'
-import logoKoe from '@/images/clients/kingdoms-of-ether/logo-light.svg' //koe_400x400.svg'
+import logoKoe from '@/images/clients/kingdoms-of-ether/logo-light.svg'
 import logoRequest from '@/images/clients/request-finance/logo-light.svg'
 import logoMoralis from '@/images/clients/moralis/logo-light.svg'
 import logoIagon from '@/images/clients/iagon/logo-light.svg'
 import logoCentaurifyDark from '@/images/clients/centaurify/logo-dark.svg'
+import logoHealthBlight from '@/images/clients/zyberia/logomark-light_1.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
@@ -23,6 +24,7 @@ const clients = [
   ['Request Finance', logoRequest],
   ['Kingdoms of Ether', logoKoe],
   ['Iagon', logoIagon],
+  ['HealthB', logoHealthBlight]
 ]
 
 function Clients() {
@@ -30,7 +32,7 @@ function Clients() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
-          <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
+          <h2 className="text-center font-display text-base font-semibold tracking-wider text-white sm:text-left">
             We’ve had the pleasure of collaborating with numerous talented individuals on various projects
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
@@ -58,13 +60,12 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing blockchain for a brighter future"
+        title="Blockchain Innovations, Shaping Tomorrow"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          At VBS, we believe blockchain is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We harness blockchain to craft Web3, DeFi, and Privacy Solutions, transforming our clients´ visions. 
+          Explore our case studies below to see our impactful collaborations.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -112,12 +113,11 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new Web3 opportunities."
+        title="Unlocking Web3 Opportunities with Expertise in Blockchain."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve blockchain technology — we can
-          come up with an endless number of those.
+          Whether you´re identifying, exploring, or responding to new Web3 challenges, our expertise ensures a wealth of innovative solutions.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -133,25 +133,20 @@ function Services() {
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Blockchain Development">
-              We specialize in creating high-quality, innovative blockchain
-              solutions. Our team is adept at leveraging the power of blockchain
-              technology to build secure, efficient, and transparent systems
-              that can revolutionize your business operations.
+              Our expertise lies in crafting top-tier solutions on EVM-compatible chains, 
+              including Ethereum, Binance Smart Chain, Polygon, Avalanche, and Fantom. 
+              We leverage this technology to design secure, efficient, and transparent systems, 
+              innovating your business operations with enhanced privacy and decentralization.
             </ListItem>
 
             <ListItem title="Web3 dApps Development">
-              Our skilled developers are proficient in the latest frameworks for
-              decentralized application (dApp) development. We build robust,
-              scalable, and user-friendly dApps that can seamlessly interact
-              with blockchain networks and smart contracts.
+              Harnessing the latest in decentralized application frameworks, our team delivers scalable, 
+              user-centric dApps that flawlessly integrate with blockchain networks and smart contracts.
             </ListItem>
 
             <ListItem title="Smart Contract Development">
-              We are at the forefront of smart contract development, creating
-              self-executing contracts with the terms of the agreement directly
-              written into code. Our smart contracts enhance security, reduce
-              reliance on intermediaries, and ensure the automation and accuracy
-              of your transactions.
+              Pioneering in the realm of smart contracts, we design self-executing agreements coded for utmost security, 
+              eliminating intermediaries and ensuring transaction precision.
             </ListItem>
 
             <ListItem title="Supporting Multiple Industries">
