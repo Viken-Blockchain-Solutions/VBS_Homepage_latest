@@ -138,13 +138,12 @@ export default async function Work() {
     <>
       <PageIntro
         eyebrow="Our work"
-        title="Crafting Cutting-Edge Solutions for Modern Challenges."
+        title="Showcasing Excellence in Blockchain Solutions."
       >
         <p>
-        At the intersection of innovation and dedication, 
-        we stand committed to delivering unparalleled value to our clients. 
-        Our ethos revolves around relentless evolution, ensuring our blockchain 
-        and Web3 projects remain at the forefront of technological advancements.
+          Merging innovation with dedication, we craft state-of-the-art solutions
+          tailored to our clients´ distinct challenges. Delve into our case studies
+          to experience the transformative power of our blockchain and Web3 initiatives.
         </p>
       </PageIntro>
 
