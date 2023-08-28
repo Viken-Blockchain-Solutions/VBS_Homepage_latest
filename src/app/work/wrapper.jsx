@@ -15,7 +15,7 @@ export default async function CaseStudyLayout({ children, _segments }) {
     .filter((caseStudy) => caseStudy.id !== id)
     .slice(0, 2)
 
-  return (
+  return (  
     <>
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
