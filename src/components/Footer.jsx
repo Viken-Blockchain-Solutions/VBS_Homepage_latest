@@ -5,7 +5,6 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
-import subscribe from '@/app/api/route'
 
 
 const navigation = [
@@ -83,7 +82,7 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
-  const [message, setMessage] = useState('')
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -98,8 +97,9 @@ function NewsletterForm() {
     }
   }
 
+
   return (
-    <form className="max-w-sm" onSubmit={handleSubmit} method="post">
+    <form className="max-w-sm" onSubmit={handleSubmit}>
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
@@ -110,7 +110,6 @@ function NewsletterForm() {
       <div className="relative mt-6">
         <input
           type="email"
-          name="email"
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"

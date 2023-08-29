@@ -13,9 +13,6 @@ import { unifiedConditional } from 'unified-conditional'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
   pageExtensions: ['jsx', 'mdx'],
 }
 
