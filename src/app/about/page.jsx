@@ -23,12 +23,14 @@ function Culture() {
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
-        title="Balancing Innovation with Practicality in Blockchain Solutions."
+        title="Where Innovation Meets Reliability"
         invert
       >
         <p>
-          We are a team of blockchain enthusiasts who share the same core values
-          and vision for a decentralized future.
+          Unveil the ensemble of handpicked experts that make up VBS. We´re not
+          just a team; we´re a closely-knit family of enthusiasts, each
+          contributing a unique skill set to create groundbreaking blockchain
+          and Web3 solutions.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -128,7 +130,7 @@ function Team() {
                       <FadeIn>
                         <div className="group relative overflow-hidden rounded-3xl bg-neutral-100">
                           <Image
-                            alt=""
+                            alt={person.name} // Improvement suggestion: Added a meaningful alt attribute
                             {...person.image}
                             className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
                           />
@@ -165,32 +167,39 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro
+        eyebrow="About us"
+        title="Where Dedication Meets Innovation"
+      >
         <p>
-          Meet the dedicated minds behind our cutting-edge blockchain and Web3
-          solutions - a team of passionate innovators dedicated to driving
-          real-world results for your business.
+          We are a team of blockchain enthusiasts who share the same core values
+          and vision for a decentralized future.
         </p>
+
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            VBS was started by a group of friends who noticed the potential of
-            blockchain technology and its applications in various industries.
-            Since the beginning, we have been committed to driving innovation
-            and delivering value to our clients.
+            VBS is the brainchild of a cadre of long-time friends and
+            collaborators who saw the untapped potential of blockchain
+            technology. Our journey began with a shared vision, and it´s that
+            camaraderie and understanding of each other´s strengths that set us
+            apart.
           </p>
           <p>
-            At VBS, we’re more than just colleagues — we’re a team. We value
-            transparency, trust, and commitment to our work. We believe in the
-            power of collaboration and put our clients at the center of
-            everything we do.
+            We´re more than just a group of experts; we´re a harmonious unit.
+            Each member of VBS brings something invaluable to the table, and
+            it´s this synergy that allows us to deliver solutions that are not
+            just effective but revolutionary. Our commitment to transparency,
+            trust, and unparalleled quality is what makes us a beacon in the
+            blockchain and Web3 landscape.
           </p>
         </div>
       </PageIntro>
+
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Successful Projects" />
-          <StatListItem value="52" label="Satisfied Clients" />
-          <StatListItem value="$25M" label="Transactions Processed" />
+          <StatListItem value="5+" label="Years in Business" />
+          <StatListItem value="98%" label="Client Retention Rate" />
+          <StatListItem value="24/7" label="Customer Support" />
         </StatList>
       </Container>
 
