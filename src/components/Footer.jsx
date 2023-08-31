@@ -97,9 +97,12 @@ function NewsletterForm() {
     }
   }
 
-
   return (
-    <form className="max-w-sm" onSubmit={handleSubmit}>
+    <form 
+      id="newsletter-signup" 
+      className="max-w-sm" 
+      onSubmit={handleSubmit}
+    >
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>

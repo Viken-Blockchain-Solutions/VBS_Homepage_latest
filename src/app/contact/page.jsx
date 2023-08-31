@@ -1,6 +1,8 @@
+'use client'
 import { useId } from 'react'
 import Link from 'next/link'
 
+import { useForm, ValidationError } from '@formspree/react'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -9,7 +11,7 @@ import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 
-function TextInput({ label, ...props }) {
+function TextInput({ state, label, ...props }) {
   let id = useId()
 
   return (
@@ -21,6 +23,7 @@ function TextInput({ label, ...props }) {
         placeholder=" "
         className="peer block w-full border border-neutral-300 bg-transparent px-6 pb-4 pt-12 text-base/6 text-neutral-950 ring-4 ring-transparent transition focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5 group-first:rounded-t-2xl group-last:rounded-b-2xl"
       />
+      <ValidationError prefix={id} field={id} errors={state.errors} />
       <label
         htmlFor={id}
         className="pointer-events-none absolute left-6 top-1/2 -mt-3 origin-left text-base/6 text-neutral-500 transition-all duration-200 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-neutral-950 peer-[:not(:placeholder-shown)]:-translate-y-4 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:font-semibold peer-[:not(:placeholder-shown)]:text-neutral-950"
@@ -45,27 +48,72 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
+  if (state.succeeded) {
+    return (
+      <div className="space-y-4 font-satoshi">
+        <h2 className="text-2xl font-extrabold text-green-700">
+          Thank you for reaching out to VBS!
+        </h2>
+        <p className="rounded-lg bg-green-100 p-4 text-lg font-semibold text-green-700 shadow-md">
+          Your inquiry is important to us, and we´ll get back to you shortly.
+        </p>
+        <p className="text-md text-gray-800">
+          In the meantime, feel free to explore our{' '}
+          <Link href="/work" className="text-blue-700 hover:underline">
+            Case-studies
+          </Link>{' '}
+          and{' '}
+          <Link href="/articles" className="text-blue-700 hover:underline">
+            Articles
+          </Link>{' '}
+          page for valuable insights.
+        </p>
+        <p className="text-md text-gray-800">
+          Don´t miss out on our latest updates!{' '}
+          <Link href="/#newsletter-signup" className="text-blue-700 hover:underline">
+            Sign up for our newsletter
+          </Link>{' '}
+          today.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <form onSubmit={handleSubmit}>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
           <TextInput
+            state={state}
+            label="Name"
+            name="name"
+            autoComplete="name"
+          />
+          <TextInput
+            state={state}
             label="Email"
             type="email"
             name="email"
             autoComplete="email"
           />
           <TextInput
+            state={state}
             label="Company"
             name="company"
             autoComplete="organization"
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <TextInput
+            state={state}
+            label="Phone"
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+          />
+          <TextInput state={state} label="Message" name="message" autoComplete="message" />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Budget</legend>
@@ -78,9 +126,10 @@ function ContactForm() {
             </fieldset>
           </div>
         </div>
-        <Button type="submit" className="mt-10">
+        <Button type="submit" className="mt-10" disabled={state.submitting}>
           Let’s work together
         </Button>
+        <ValidationError errors={state.errors} />
       </form>
     </FadeIn>
   )
@@ -93,7 +142,7 @@ function ContactDetails() {
         Our offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person?
+        Prefer meeting us in person?
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
@@ -132,10 +181,10 @@ function ContactDetails() {
   )
 }
 
-export const metadata = {
+/* export const metadata = {
   title: 'Contact Us',
   description: 'Let’s work together. We can’t wait to hear from you.',
-}
+} */
 
 export default function Contact() {
   return (
