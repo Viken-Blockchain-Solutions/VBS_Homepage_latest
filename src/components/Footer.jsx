@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useState } from 'react'
 
 import { useForm, ValidationError } from '@formspree/react';
 import { Container } from '@/components/Container'
@@ -83,7 +82,7 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
-  const [state, handleSubmit] = useForm("xaygjqdo");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_NEWSLETTER);
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
