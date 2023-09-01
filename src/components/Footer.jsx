@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
+import { useForm, ValidationError } from '@formspree/react';
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
@@ -82,19 +83,9 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
-  const [message, setMessage] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    
-    const response = await subscribe(email);
-
-    if (response.success) {
-      setMessage(response.message);
-    } else {
-      setMessage(response.message);
-    }
+  const [state, handleSubmit] = useForm("xaygjqdo");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
   }
 
   return (
@@ -115,20 +106,27 @@ function NewsletterForm() {
           type="email"
           placeholder="Email address"
           autoComplete="email"
+          name='email'
           aria-label="Email address"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
+        />
+        <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
             aria-label="Submit"
             className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-vbs-yellow-dark"
+            disabled={state.submitting}
           >
             <ArrowIcon className="w-4" />
           </button>
         </div>
       </div>
-      <p className="mt-4">{message}</p>
+      <p className="mt-4">{state.succeeded}</p>
     </form>
   )
 }
