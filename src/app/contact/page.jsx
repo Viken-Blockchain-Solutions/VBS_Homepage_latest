@@ -48,7 +48,7 @@ function RadioInput({ label, ...props }) {
 }
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
+  const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORM}`)
   if (state.succeeded) {
     return (
       <div className="space-y-4 font-satoshi">

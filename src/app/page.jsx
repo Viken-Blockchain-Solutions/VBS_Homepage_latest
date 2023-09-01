@@ -14,7 +14,6 @@ import logoRequest from '@/images/clients/request-finance/logo-light.svg'
 import logoMoralis from '@/images/clients/moralis/logo-light.svg'
 import logoIagon from '@/images/clients/iagon/logo-light.svg'
 import logoCentaurifyDark from '@/images/clients/centaurify/logo-dark.svg'
-import logoHealthBlight from '@/images/clients/zyberia/logomark-light_1.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 
@@ -24,7 +23,6 @@ const clients = [
   ['Request Finance', logoRequest],
   ['Kingdoms of Ether', logoKoe],
   ['Iagon', logoIagon],
-  ['HealthB', logoHealthBlight]
 ]
 
 function Clients() {
@@ -45,7 +43,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} optimized="true" />
+                  <Image src={logo} alt={client} optimized="true" autoFocus/>
                 </FadeIn>
               </li>
             ))}
