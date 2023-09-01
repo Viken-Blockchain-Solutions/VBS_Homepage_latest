@@ -73,13 +73,13 @@ const library = [
     products: [
       {
         name: 'Spread Dapp - NFT Edition',
-        description: 'Introducing Spread Dapp - NFT Edition, a revolutionary decentralized platform that redefines the way assets are transferred on the blockchain. Seamlessly transfer native assets, ERC20, and uniquely, ERC721 tokens to multiple addresses in a single transaction. The NFT Edition further enhances this by allowing the batch transfer of individual NFTs.',
+        description: 'Introducing Spread Dapp - NFT Edition: a game-changing platform for asset transfers on the blockchain. Easily send native, ERC20, and uniquely, ERC721 tokens to multiple addresses in one go. Now with batch NFT transfers.',
         image: { src: imageSpread },
         link: 'https://spreadnftedition.vercel.app/'
       },
       {
-        name: 'Decentralized Exchange',
-        description: 'Coming Soon: A state-of-the-art decentralized exchange platform offering secure, efficient, and user-friendly trading experiences.',
+        name: 'Coming Soon: Decentralized Exchange',
+        description: 'A state-of-the-art decentralized exchange platform offering secure, efficient, and user-friendly trading experiences.',
         image: { src: imageDex },
         link: '#dex'
       },

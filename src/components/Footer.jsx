@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 
 import { useForm, ValidationError } from '@formspree/react';
@@ -82,16 +83,16 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_NEWSLETTER);
+  const [state, handleNewsletterSubmit] = useForm(`${process.env.NEXT_PUBLIC_NEWSLETTER}`);
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+    return <p>Thanks for signing up to our newsletter!</p>;
   }
 
   return (
     <form 
       id="newsletter-signup" 
       className="max-w-sm" 
-      onSubmit={handleSubmit}
+      onSubmit={handleNewsletterSubmit}
     >
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
@@ -125,7 +126,7 @@ function NewsletterForm() {
           </button>
         </div>
       </div>
-      <p className="mt-4">{state.succeeded}</p>
+      <div className="mt-4">{state.succeeded}</div>
     </form>
   )
 }
