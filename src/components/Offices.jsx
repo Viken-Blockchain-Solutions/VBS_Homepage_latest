@@ -1,4 +1,5 @@
-import clsx from 'clsx'
+import clsx from 'clsx';
+import Link from 'next/link';
 
 function Office({ name, children, invert = false }) {
   return (
@@ -38,6 +39,12 @@ export function Offices({ invert = false, ...props }) {
           E-mail: contact@vikenblockchain.com
           <br />
           NO 930 668 869 MVA
+        </Office>
+      </li>
+      <li>
+        <Office name="Give Us A Review" invert={invert}>
+          <Link href="https://www.designrush.com/agency/profile/viken-blockchain-solutions">VBS on DesignRush.com</Link>
+          <br />
         </Office>
       </li>
     </ul>
