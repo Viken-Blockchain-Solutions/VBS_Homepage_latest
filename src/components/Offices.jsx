@@ -42,7 +42,7 @@ export function Offices({ invert = false, ...props }) {
         </Office>
       </li>
       <li>
-        <Office name="view our profile on DesignRush" invert={invert}>
+        <Office name="View our profile on DesignRush" invert={invert}>
           <Link href="https://www.designrush.com/agency/profile/viken-blockchain-solutions">VBS on DesignRush.com</Link>
           <br />
         </Office>
