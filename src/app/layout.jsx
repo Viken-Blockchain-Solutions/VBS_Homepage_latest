@@ -1,5 +1,6 @@
-import { RootLayout } from '@/components/RootLayout'
+import { RootLayout } from '@/components/RootLayout';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import '@/styles/tailwind.css'
 import '@/styles/satoshi.css'
@@ -17,6 +18,7 @@ export default function Layout({ children }) {
       <body className="flex min-h-full flex-col">
         <RootLayout>{children}</RootLayout>
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   )
