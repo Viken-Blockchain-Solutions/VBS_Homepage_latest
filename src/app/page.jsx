@@ -16,6 +16,7 @@ import logoIagon from '@/images/clients/iagon/logo-light.svg'
 import logoCentaurifyDark from '@/images/clients/centaurify/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+import dockLogoNegative from '@/images/clients/dock/negative/text_negative(white).svg'
 
 const clients = [
   ['Centaurify', logoCentaurify],
@@ -23,6 +24,7 @@ const clients = [
   ['Request Finance', logoRequest],
   ['Kingdoms of Ether', logoKoe],
   ['Iagon', logoIagon],
+  ['Dock', dockLogoNegative],
 ]
 
 function Clients() {
