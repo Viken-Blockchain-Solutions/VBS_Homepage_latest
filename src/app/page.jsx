@@ -13,9 +13,11 @@ import logoKoe from '@/images/clients/kingdoms-of-ether/logo-light.svg'
 import logoRequest from '@/images/clients/request-finance/logo-light.svg'
 import logoMoralis from '@/images/clients/moralis/logo-light.svg'
 import logoIagon from '@/images/clients/iagon/logo-light.svg'
+import logoAndTextHealthB from '../images/clients/healthb/negative/logo_and_text_HealthB.svg'
 import logoCentaurifyDark from '@/images/clients/centaurify/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
+import dockLogoNegative from '@/images/clients/dock/negative/text_negative(white).svg'
 
 const clients = [
   ['Centaurify', logoCentaurify],
@@ -23,6 +25,8 @@ const clients = [
   ['Request Finance', logoRequest],
   ['Kingdoms of Ether', logoKoe],
   ['Iagon', logoIagon],
+  ['HealthB', logoAndTextHealthB],
+  ['Dock', dockLogoNegative],
 ]
 
 function Clients() {
