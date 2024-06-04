@@ -18,15 +18,17 @@ import logoCentaurifyDark from '@/images/clients/centaurify/logo-dark.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
 import dockLogoNegative from '@/images/clients/dock/negative/text_negative(white).svg'
+import logoTrustd from '@/images/clients/trustd/trustd.svg'
 
 const clients = [
-  ['Centaurify', logoCentaurify],
+  ['Trustd', logoTrustd],
   ['Moralis Academy', logoMoralis],
   ['Request Finance', logoRequest],
   ['Kingdoms of Ether', logoKoe],
+  ['Centaurify', logoCentaurify],
+  ['Dock', dockLogoNegative],
   ['Iagon', logoIagon],
   ['HealthB', logoAndTextHealthB],
-  ['Dock', dockLogoNegative],
 ]
 
 function Clients() {
