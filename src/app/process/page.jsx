@@ -112,13 +112,13 @@ function Build() {
         </p>
       </div>
 
-      <Blockquote
+      {/* <Blockquote
         author={{ name: 'Debra Fiscal', role: 'CEO of Unseal' }}
         className="mt-12"
       >
         Studio were so regular with their progress updates we almost began to
         think they were automated!
-      </Blockquote>
+      </Blockquote> */}
 
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
         Included in this phase
