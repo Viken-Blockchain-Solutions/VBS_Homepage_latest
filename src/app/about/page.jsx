@@ -67,17 +67,7 @@ const team = [
         name: 'Christian Cole',
         role: 'CTO',
         image: { src: imageChristianCole },
-      },
-      {
-        name: 'Alexander Johannessen',
-        role: 'CMO',
-        image: { src: imageAlexanderJohannessen },
-      },
-      {
-        name: 'Bjørn Tollefsen',
-        role: 'Partner & Business Relations',
-        image: { src: imageBjornTollefsen },
-      },
+      }
     ],
   },
   {
