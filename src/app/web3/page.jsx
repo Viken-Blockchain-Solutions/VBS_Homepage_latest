@@ -11,7 +11,7 @@ import { PageLinks } from '@/components/PageLinks'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StatList, StatListItem } from '@/components/StatList'
 import imageNFTinsight from '@/images/products/nft-insight.png'
-import imageStakingDashboard from '@/images/products/staking-dashboard.png'
+import alloraImage from '@/images/products/allora_hero.png'
 import imageSpread from '@/images/products/spread-dapp.png'
 import imageDex from '@/images/products/coming-soon.png'
 import { loadMDXMetadata } from '@/lib/loadMDXMetadata'
@@ -52,19 +52,13 @@ function Culture() {
 
 const library = [
   {
-    title: 'Insight & Analytics',
+    title: 'Web3 Business Tool',
     products: [
       {
-        name: 'NFT Insight',
-        description: 'A comprehensive tool designed to seamlessly integrate and showcase your NFT collections on any platform, offering insights into your NFT assets.',
-        image: { src: imageNFTinsight },
-        link: 'https://nft-tools-nine.vercel.app/'
-      },
-      {
-        name: 'Staking Pools Dashboard',
-        description: 'Monitor and manage your staking pools with ease. Get real-time data, analytics, and more with our intuitive dashboard.',
-        image: { src: imageStakingDashboard },
-        link: '#staking-dashboard'
+        name: 'Allora',
+        description: 'Allora is a comprehensive business management tool that automates time tracking, project management, invoicing, and accounting for freelancers, consultants, startups, and Web3 businesses.',
+        image: { src: alloraImage },
+        link: 'https://allora.finance'
       },
     ],
   },
