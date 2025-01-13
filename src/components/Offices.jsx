@@ -41,12 +41,6 @@ export function Offices({ invert = false, ...props }) {
           NO 930 668 869 MVA
         </Office>
       </li>
-      <li>
-        <Office name="View our profile on DesignRush" invert={invert}>
-          <Link href="https://www.designrush.com/agency/profile/viken-blockchain-solutions">VBS on DesignRush.com</Link>
-          <br />
-        </Office>
-      </li>
     </ul>
   )
 }
